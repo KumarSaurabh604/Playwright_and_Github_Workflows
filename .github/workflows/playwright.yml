@@ -23,6 +23,8 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      URL_PROVISION: https://www.google.com/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
