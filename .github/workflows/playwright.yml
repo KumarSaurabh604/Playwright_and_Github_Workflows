@@ -1,24 +1,24 @@
 name: Playwright Tests
 'on':
   workflow_dispatch:
-    inputs:
-      url_environment:
-        description: Provision Environment
-        type: choice
-        required: true
-        default: 'false'
-        options:
-          - alpha1
-          - alpha6
-      upside_url_environment:
-        description: Upside Environment
-        type: choice
-        required: true
-        default: 'false'
-        options:
-          - uat
-          - qa1
-          - qa2
+  #  inputs:
+     # url_environment:
+       # description: Provision Environment
+       # type: choice
+       # required: true
+       # default: 'false'
+       # options:
+          #- alpha1
+          #- alpha6
+      #upside_url_environment:
+       # description: Upside Environment
+       # type: choice
+        #required: true
+        #default: 'false'
+        #options:
+         # - uat
+          # - qa1
+          #- qa2
 jobs:
   test:
     timeout-minutes: 60
